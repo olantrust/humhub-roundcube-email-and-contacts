@@ -7,6 +7,8 @@ Integrate contacts and email inbox into your Humhub experience. You must a Round
 
 The app can store login details, but check security requirements meet your needs before use.
 
+**NOTE:** Copy componsnte/auth_hh.php file and paste it inside your roundcube directory. This is required in order to auth humhub with roundcube.
+
 [__Roundcube Website__](https://roundcube.net/)
 
 [__Module website__](https://github.com/olantrust/humhub-roundcube)
