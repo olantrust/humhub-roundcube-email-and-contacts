@@ -1,0 +1,15 @@
+{
+    "id": "roundcube",
+    "name": "Email and Contacts",
+    "description": "Email and Contacts module for Spaces & Users.",
+    "keywords": [
+        "Email",
+        "Contacts",
+        "Roundcube"
+    ],
+    "version": "1.1",
+    "humhub": {
+        "minVersion": "1.5"
+    },
+    "screenshots": ["assets/module_image.png"]
+}
