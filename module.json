@@ -11,5 +11,20 @@
     "humhub": {
         "minVersion": "1.6"
     },
-    "screenshots": ["assets/module_image.png"]
+    "homepage": "https://github.com/olantrust/humhub-roundcube",
+    "authors": [
+        {
+            "name": "Storm Poorun"
+        },
+        {
+            "name": "Vijay Padhariya"
+        }
+    ],
+    "screenshots": [
+        "resources/screenshot-1.png",
+        "resources/screenshot-2.png",
+        "resources/screenshot-3.png",
+        "resources/screenshot-4.png",
+        "resources/screenshot-5.png"
+    ]
 }
