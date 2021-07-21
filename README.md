@@ -9,6 +9,6 @@ The app can store login details, but check security requirements meet your needs
 
 [__Roundcube Website__](https://roundcube.net/)
 
-__Module website:__ Olan/Roundcube
+[__Module website__](https://github.com/olantrust/humhub-roundcube)
 
 __Developer:__ Vijay Padhariya
