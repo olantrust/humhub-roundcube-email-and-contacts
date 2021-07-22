@@ -1,6 +1,6 @@
 ## Contacts and Email using Roundcube
 
-Integrate contacts and email inbox into your Humhub experience. You must a Roundcube facility (either on your own server, or alternatively via an email provider). This app can give provides
+Integrate contacts and email inboxes into your Humhub experience. You must possess a Roundcube installation (either on your own server, or alternatively via an email provider). This app provides
 
 1. a shared inbox and contact list for each Space
 2. a private inbox and contacts list for each User
