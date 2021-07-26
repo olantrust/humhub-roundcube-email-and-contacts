@@ -1,6 +1,6 @@
 <?php
 
-namespace olan\roundcube\models;
+namespace olan\roundcubeemailandcontacts\models;
 
 use Yii;
 use yii\behaviors\TimestampBehavior;
@@ -71,3 +71,4 @@ class RoundcubeSpace extends \yii\db\ActiveRecord
         return ((self::findOne(['space_id' => $space_id])) ? true : false);
     }
 }
+ 

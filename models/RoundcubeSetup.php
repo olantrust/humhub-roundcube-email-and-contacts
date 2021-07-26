@@ -1,6 +1,6 @@
 <?php
 
-namespace olan\roundcube\models;
+namespace olan\roundcubeemailandcontacts\models;
 
 use Yii;
 
@@ -48,7 +48,7 @@ class RoundcubeSetup extends \humhub\models\Setting
      */
     public function save($runValidation = true, $attributeNames = NULL)
     {
-        $module = Yii::$app->getModule('roundcube');
+        $module = Yii::$app->getModule('roundcube-email-and-contacts');
 
         $module->settings->set('rc_url', $this->rc_url);
 
@@ -62,7 +62,7 @@ class RoundcubeSetup extends \humhub\models\Setting
      */
     public static function getValue($key)
     {
-        return Yii::$app->getModule('roundcube')->settings->get($key);
+        return Yii::$app->getModule('roundcube-email-and-contacts')->settings->get($key);
     }
 
 }

@@ -1,13 +1,13 @@
 <?php
 
-namespace olan\roundcube\controllers;
+namespace olan\roundcubeemailandcontacts\controllers;
 
 use humhub\components\Controller;
 
 class IndexController extends Controller
 {
 
-    public $subLayout = "@roundcube/views/layouts/default";
+    public $subLayout = "@roundcube-email-and-contacts/views/layouts/default";
 
     /**
      * Renders the index view for the module

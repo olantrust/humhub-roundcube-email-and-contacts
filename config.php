@@ -1,6 +1,6 @@
 <?php
 
-use olan\roundcube\Events;
+use olan\roundcubeemailandcontacts\Events;
 use humhub\modules\admin\widgets\AdminMenu;
 use humhub\modules\space\modules\manage\widgets\DefaultMenu;
 use humhub\modules\space\widgets\HeaderControlsMenu;
@@ -8,11 +8,10 @@ use humhub\modules\space\widgets\Menu;
 use humhub\modules\user\widgets\AccountMenu;
 use humhub\modules\user\widgets\ProfileMenu;
 use humhub\widgets\TopMenu;
-
 return [
-	'id' => 'roundcube',
-	'class' => 'olan\roundcube\Module',
-	'namespace' => 'olan\roundcube',
+	'id' => 'roundcube-email-and-contacts',
+	'class' => 'olan\roundcubeemailandcontacts\Module',
+	'namespace' => 'olan\roundcubeemailandcontacts',
 	'events' => [
 		// ['class' => TopMenu::class, 'event' => TopMenu::EVENT_INIT, 'callback' => [Events::class, 'onTopMenuInit']],
 		['class' => AdminMenu::class, 'event' => AdminMenu::EVENT_INIT, 'callback' => [Events::class, 'onAdminMenuInit']],

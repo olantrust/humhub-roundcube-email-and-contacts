@@ -1,6 +1,6 @@
 <?php
 
-namespace olan\roundcube\helpers;
+namespace olan\roundcubeemailandcontacts\helpers;
 
 use yii\base\Security as BaseSecurity;
 

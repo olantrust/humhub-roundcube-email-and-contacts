@@ -1,10 +1,10 @@
 <?php
 
-namespace olan\roundcube\controllers;
+namespace olan\roundcubeemailandcontacts\controllers;
 
-use olan\roundcube\components\RoundCubeAutoLogin;
-use olan\roundcube\helpers\RoundcubeUrl;
-use olan\roundcube\models\RoundcubeUser;
+use olan\roundcubeemailandcontacts\components\RoundCubeAutoLogin;
+use olan\roundcubeemailandcontacts\helpers\RoundcubeUrl;
+use olan\roundcubeemailandcontacts\models\RoundcubeUser;
 use Yii;
 
 /**
@@ -49,8 +49,8 @@ class RoundcubeSettingsUserController extends \humhub\modules\user\components\Ba
         $configured = RoundcubeUser::configured($user->id);
         if(!$configured)
         {
-            $this->view->warn(Yii::t('RoundcubeModule.base', 'Please set your email configuration'));
-            return $this->redirect(['/roundcube/roundcube-settings-user/index']);
+            $this->view->warn(Yii::t('RoundcubeEmailAndContactsModule.base', 'Please set your email configuration'));
+            return $this->redirect(['/roundcube-email-and-contacts/roundcube-settings-user/index']);
         }
 
         $rc_url = RoundcubeUrl::setting();

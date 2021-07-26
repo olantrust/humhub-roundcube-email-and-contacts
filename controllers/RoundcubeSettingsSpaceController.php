@@ -1,10 +1,10 @@
 <?php
 
-namespace olan\roundcube\controllers;
+namespace olan\roundcubeemailandcontacts\controllers;
 
-use olan\roundcube\components\RoundCubeAutoLogin;
-use olan\roundcube\helpers\RoundcubeUrl;
-use olan\roundcube\models\RoundcubeSpace;
+use olan\roundcubeemailandcontacts\components\RoundCubeAutoLogin;
+use olan\roundcubeemailandcontacts\helpers\RoundcubeUrl;
+use olan\roundcubeemailandcontacts\models\RoundcubeSpace;
 use Yii;
 
 /**
@@ -29,11 +29,11 @@ class RoundcubeSettingsSpaceController extends \humhub\modules\space\modules\man
         if ($model->load(Yii::$app->request->post()) && $model->save())
         {
             $this->view->saved();
-            return $this->redirect($space->createUrl('/roundcube/roundcube-settings-space'));
+            return $this->redirect($space->createUrl('/roundcube-email-and-contacts/roundcube-settings-space'));
         }
 
 
-        $rc_url = Yii::$app->getModule('roundcube')->settings->get('rc_url');
+        $rc_url = Yii::$app->getModule('roundcube-email-and-contacts')->settings->get('rc_url');
 
         return $this->render('index', [
             'space'  => $space,
@@ -49,8 +49,8 @@ class RoundcubeSettingsSpaceController extends \humhub\modules\space\modules\man
         $configured = RoundcubeSpace::configured($space->id);
         if(!$configured)
         {
-            $this->view->warn(Yii::t('RoundcubeModule.base', 'Please set your email configuration'));
-            return $this->redirect($space->createUrl('/roundcube/roundcube-settings-space'));
+            $this->view->warn(Yii::t('RoundcubeEmailAndContactsModule.base', 'Please set your email configuration'));
+            return $this->redirect($space->createUrl('/roundcube-email-and-contacts/roundcube-settings-space'));
         }
 
         $rc_url = RoundcubeUrl::setting();

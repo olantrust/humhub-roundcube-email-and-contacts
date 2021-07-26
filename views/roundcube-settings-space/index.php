@@ -31,7 +31,7 @@ use humhub\widgets\Button;
             </div>
 
             <div class="form-group">
-                <?= Html::submitButton(Yii::t('RoundcubeModule.base', 'Save'), ['class' => 'btn btn-success']) ?>
+                <?= Html::submitButton(Yii::t('RoundcubeEmailAndContactsModule.base', 'Save'), ['class' => 'btn btn-success']) ?>
             </div>
 
         <?php ActiveForm::end(); ?>

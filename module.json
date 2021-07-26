@@ -1,6 +1,6 @@
 {
-    "id": "roundcube",
-    "name": "Email and Contacts",
+    "id": "roundcube-email-and-contacts",
+    "name": "Roundcube Email And Contacts",
     "description": "Email and Contacts module for Spaces & Users.",
     "keywords": [
         "Email",

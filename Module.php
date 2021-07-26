@@ -1,6 +1,6 @@
 <?php
 
-namespace olan\roundcube;
+namespace olan\roundcubeemailandcontacts;
 
 use Yii;
 use yii\helpers\Url;
@@ -26,7 +26,7 @@ class Module extends \humhub\modules\content\components\ContentContainerModule
     */
     public function getConfigUrl()
     {
-        return Url::to(['/roundcube/admin']);
+        return Url::to(['/roundcube-email-and-contacts/admin']);
     }
 
     /**
@@ -52,7 +52,7 @@ class Module extends \humhub\modules\content\components\ContentContainerModule
     */
     public function getContentContainerName(ContentContainerActiveRecord $container)
     {
-        return Yii::t('RoundcubeModule.base', 'Round Cube');
+        return Yii::t('RoundcubeEmailAndContactsModule.base', 'Roundcube Email and Contacts');
     }
 
     /**
@@ -60,6 +60,6 @@ class Module extends \humhub\modules\content\components\ContentContainerModule
     */
     public function getContentContainerDescription(ContentContainerActiveRecord $container)
     {
-        return Yii::t('RoundcubeModule.base', 'Humhub & Roundcube integration');
+        return Yii::t('RoundcubeEmailAndContactsModule.base', 'Short description of the modules purpose.');
     }
 }

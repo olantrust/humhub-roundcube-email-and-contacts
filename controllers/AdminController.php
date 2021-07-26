@@ -1,10 +1,10 @@
 <?php
 
-namespace olan\roundcube\controllers;
+namespace olan\roundcubeemailandcontacts\controllers;
 
 use Yii;
 use humhub\modules\admin\components\Controller;
-use olan\roundcube\models\RoundcubeSetup;
+use olan\roundcubeemailandcontacts\models\RoundcubeSetup;
 
 class AdminController extends Controller
 {
@@ -16,7 +16,7 @@ class AdminController extends Controller
      */
     public function actionIndex()
     {
-        $module = Yii::$app->getModule('roundcube');
+        $module = Yii::$app->getModule('roundcube-email-and-contacts');
 
         $model = new RoundcubeSetup();
 

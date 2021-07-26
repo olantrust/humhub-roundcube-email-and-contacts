@@ -1,6 +1,6 @@
 <?php
 
-namespace olan\roundcube\models;
+namespace olan\roundcubeemailandcontacts\models;
 
 use Yii;
 use yii\behaviors\TimestampBehavior;

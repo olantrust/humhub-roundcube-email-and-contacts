@@ -1,6 +1,6 @@
 <?php
 
-namespace olan\roundcube\components;
+namespace olan\roundcubeemailandcontacts\components;
 
 use Yii;
 use Exception;

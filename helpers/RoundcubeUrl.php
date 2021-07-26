@@ -1,6 +1,6 @@
 <?php
 
-namespace olan\roundcube\helpers;
+namespace olan\roundcubeemailandcontacts\helpers;
 
 use Yii;
 use yii\helpers\ArrayHelper;
@@ -16,8 +16,8 @@ class RoundcubeUrl
 
     public static function get()
     {
-        // echo Yii::$app->getModule('roundcube')->settings->get('rc_url');exit;
-        return Yii::$app->getModule('roundcube')->settings->get('rc_url');
+        // echo Yii::$app->getModule('roundcube-email-and-contacts')->settings->get('rc_url');exit;
+        return Yii::$app->getModule('roundcube-email-and-contacts')->settings->get('rc_url');
     }
 
     /**

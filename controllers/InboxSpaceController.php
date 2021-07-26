@@ -1,12 +1,12 @@
 <?php
 
-namespace olan\roundcube\controllers;
+namespace olan\roundcubeemailandcontacts\controllers;
 
 use Yii;
-use olan\roundcube\components\RoundCubeAutoLogin;
-use olan\roundcube\helpers\RoundcubeUrl;
-use olan\roundcube\helpers\Security;
-use olan\roundcube\models\RoundcubeSpace;
+use olan\roundcubeemailandcontacts\components\RoundCubeAutoLogin;
+use olan\roundcubeemailandcontacts\helpers\RoundcubeUrl;
+use olan\roundcubeemailandcontacts\helpers\Security;
+use olan\roundcubeemailandcontacts\models\RoundcubeSpace;
 
 class InboxSpaceController extends \humhub\modules\content\components\ContentContainerController
 {
@@ -19,8 +19,8 @@ class InboxSpaceController extends \humhub\modules\content\components\ContentCon
     //     if(empty($model))
     //     {
     //         // $this->view->saved();
-    //         $this->view->warn(Yii::t('RoundcubeModule.base', 'Please set your email configuration'));
-    //         return $this->redirect($space->createUrl('/roundcube/roundcube-settings-space'));
+    //         $this->view->warn(Yii::t('RoundcubeEmailAndContactsModule.base', 'Please set your email configuration'));
+    //         return $this->redirect($space->createUrl('/roundcube-email-and-contacts/roundcube-settings-space'));
     //     }
 
     //     return parent::beforeAction($action);
@@ -35,12 +35,12 @@ class InboxSpaceController extends \humhub\modules\content\components\ContentCon
             if($space->isAdmin())
             {
                 // $this->view->saved();
-                $this->view->warn(Yii::t('RoundcubeModule.base', 'Please set your email configuration'));
-                return $this->redirect($space->createUrl('/roundcube/roundcube-settings-space'));
+                $this->view->warn(Yii::t('RoundcubeEmailAndContactsModule.base', 'Please set your email configuration'));
+                return $this->redirect($space->createUrl('/roundcube-email-and-contacts/roundcube-settings-space'));
             }
             else //if(!$space->isAdmin())
             {
-                return $this->redirect($space->createUrl('/roundcube/inbox-space/config-required'));
+                return $this->redirect($space->createUrl('/roundcube-email-and-contacts/inbox-space/config-required'));
             }
         }
     }

@@ -11,7 +11,7 @@ if(!empty($model->rc_url))
 ?>
 <div class="container-fluid">
     <div class="panel panel-default">
-        <div class="panel-heading"><strong><?= Yii::t('RoundcubeModule.base', 'Roundcube') ?></strong> <?= Yii::t('RoundcubeModule.base', 'configuration') ?></div>
+        <div class="panel-heading"><strong><?= Yii::t('RoundcubeEmailAndContactsModule.base', 'Roundcube') ?></strong> <?= Yii::t('RoundcubeEmailAndContactsModule.base', 'configuration') ?></div>
 
         <div class="panel-body">
             <?php $form = ActiveForm::begin(); ?>
