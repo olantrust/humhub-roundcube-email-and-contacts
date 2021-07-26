@@ -13,7 +13,7 @@ use humhub\widgets\Button;
 <div class="panel panel-default">
     <div>
         <div class="panel-heading">
-            <?= Yii::t('RoundcubeModule.manage', '<strong>Email & Contacts</strong> Configuration'); ?>
+            <?= Yii::t('RoundcubeEmailAndContactsModule.base', '<strong>Email & Contacts</strong> Configuration'); ?>
         </div>
     </div>
 

@@ -10,7 +10,7 @@ $this->registerCss('
 ?>
 <div class="panel panel-default">
     <div class="panel-heading">
-        <?= Yii::t('RoundcubeModule.manage', '<strong>Email & Contacts</strong> Settings'); ?>
+        <?= Yii::t('RoundcubeEmailAndContactsModule.base', '<strong>Email & Contacts</strong> Settings'); ?>
     </div>
 
     <?= DefaultMenu::widget(['space' => $space]); ?>

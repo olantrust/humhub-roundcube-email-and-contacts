@@ -21,7 +21,7 @@ if(!empty($model->rc_url))
                     ])->textInput(['maxlength' => true])->label('Roundcube URL (for use with Email and Contacts modules)'); ?>
 
                 <div class="form-group">
-                    <?= Html::submitButton(Yii::t('FinanceModule.base', 'Save'), ['class' => 'btn btn-success']) ?>
+                    <?= Html::submitButton(Yii::t('RoundcubeEmailAndContactsModule.base', 'Save'), ['class' => 'btn btn-success']) ?>
                 </div>
             <?php ActiveForm::end(); ?>
         </div>
