@@ -139,7 +139,7 @@ class Events
         $user = Yii::$app->user->getIdentity();
 
         // Show menu in account setting only if the module is enabled by user
-        if($user->isModuleEnabled('roundcube-email-and-contacts')) //$event->sender->user->isModuleEnabled('roundcube'))
+        // if($user->isModuleEnabled('roundcube-email-and-contacts')) //$event->sender->user->isModuleEnabled('roundcube'))
         {
             $event->sender->addEntry(new MenuLink([
                 'label'     => Yii::t('RoundcubeEmailAndContactsModule.base', 'Roundcube Email and Contacts'),
@@ -165,7 +165,7 @@ class Events
 
         $rc_url = Yii::$app->getModule('roundcube-email-and-contacts')->settings->get('rc_url');
 
-        if($user->isModuleEnabled('roundcube-email-and-contacts') && $rc_url && $user->id == Yii::$app->user->getIdentity()->id)
+        if(/*$user->isModuleEnabled('roundcube-email-and-contacts') && */$rc_url && $user->id == Yii::$app->user->getIdentity()->id)
         {
             // $event->sender->template = '@themes' . '/' . ThemeHelper::getThemeByName('Olan')->name . '/views/ui/menu/widgets/views/left-space-navigation.php';
 
